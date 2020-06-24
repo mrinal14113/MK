@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>MK</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+    
+	<div class="top-bar">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="left-top">
+						<div class="email-box">
+							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> youremail@gmail.com</a>
+						</div>
+						<div class="phone-box">
+							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="right-top">
+						<div class="social-box">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
+							<ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+<style >
+    
+   body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+</style>
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="slider_01.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="slider_02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="how-it-work.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="popular-sofas.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="popular-shoe-racks.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="popular-sofa-cum-bed.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+       </div>
+    <div class="column">
+       </div>
+    <div class="column">
+       </div>
+    <div class="column">
+       </div>
+    <div class="column">
+     </div>    
+    <div class="column">
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<script >
+
+
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+
+
+<br>
+
+<br>
+
+ <div style="float:left;  
+                background:#F5F5F5; 
+                width:33%; 
+                height:70px;
+                text-align: center; "> 
+                <h4>FREE DELIVERY & INSTALLATION</h4> 
+                
+<h6 style="color: black; text-align: center;">across all major cities</h6>
+            </div>  
+
+
+
+
+
+    
+                    <div style="float:left;  
+                background:#F5F5F5; 
+                width:33%; 
+                height:70px;margin-left: 10px;"><h4 style="text-align: center;">GET 20% OFF ON ALL PRODUCTS<h4>
+<h6 style="color: black;
+text-align: center;">contact in morning</h6></div>
+
+
+                <div style="float:right; 
+                background:#F5F5F5; 
+                width:33%; 
+                height:70px;">
+                    
+
+
+                    <h4 style="text-align: center;">LARGE EXPERIENCE STORE NETWORK</h4>
+                
+<h6 style="color: black; text-align: center;"> Stores scross Indore</h6>
+
+                </div>
+            
+ 
+
+
+<br>
+
+
+
+<br>
+
+
+
+<br>
+
+
+
+
+ <h2 style="color: black;text-align: center;">Shop Categories</h2>
+
+
+<br>
+<br>
+<br>
+
+   
+ <div style="float:left;  
+                background:pink; 
+                width:300px; 
+                height:300px;
+                margin-left: 10px; "> 
+                <img src="about_02.jpg"
+                style= "width:300px;height:300px;">
+                
+            </div>  
+
+
+
+
+
+                    <div style="float:left;  
+                background:red; 
+                width:320px; 
+                height:300px;margin-left: 10px;"> <img src="about_01.jpg"
+                style= "width:320px;height:300px;">
+                </div>
+
+
+                <div style="float:left; 
+                background:green; 
+                width:350px; 
+                height:300px;
+                margin-left: 10px;">
+ <img src="device_03.jpg"
+                style= "width:350px;height:300px;">
+                
+                    </div>
+
+
+<div style="float:left; 
+                background:pink; 
+                width:310px; 
+                height:300px;
+                margin-left: 10px;">
+
+<img src="bedroom-menu.jpg"
+                style= "width:350px;height:300px;">
+       
+                    </div>
+
+<br><br>
+<div style="background-color: white;width: 100px;height: 100px;"></div>
+
+
+
+<br>
+                                
+<br>                                
+<br>                                
+<br>                                
+<br>                                
+<br>                                
+<br>                                
+<br>                                
+<br>           
+<div style="float:left;  
+                background:pink; 
+                width:300px; 
+                height:300px;
+                margin-left: 10px; "> 
+                <img src="beds.jpg"
+                style= "width:300px;height:300px;">
+                
+            </div>  
+
+
+
+
+
+                    <div style="float:left;  
+                background:red; 
+                width:320px; 
+                height:300px;margin-left: 10px;"> <img src="coffee-tables.jpg"
+                style= "width:320px;height:300px;">
+                </div>
+
+
+                <div style="float:left; 
+                background:green; 
+                width:350px; 
+                height:300px;
+                margin-left: 10px;">
+ <img src="dd.jpg"
+                style= "width:350px;height:300px;">
+                
+                    </div>
+
+
+<div style="float:left; 
+                background:pink; 
+                width:310px; 
+                height:300px;
+                margin-left: 10px;">
+
+<img src="dining-menu.jpg"
+                style= "width:350px;height:300px;">
+       
+                    </div>
+
+<br><br>
+<div style="background-color: white;width: 100px;height: 100px;"></div>
+
+
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                       <br>
+                        <h3 style="text-align: center;">Indore's custom furniture online</h3>
+                        <h5 style="text-align: center;">Buy Furniture Online from our extensive collection of wooden furniture units to give your home an elegant touch at affordable</h5>
+            
+<br>
+        
+
+<img src="how-it-work.jpg" style="width: 1200px; height: 440px; margin-left: 90px;">
+
+
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+
+
+<div style="float:left;  
+                background:pink; 
+                width:300px; 
+                height:300px;
+                margin-left: 90px; "> 
+                <img src="features_01.jpg"
+                style= "width:660px;height:600px;">
+                
+            </div>  
+
+
+
+
+
+                <div style="float:left; 
+                background:green; 
+                width:350px; 
+                height:300px;
+                margin-left:380px;">
+ <img src="dining-sets-1440x500.jpg"
+                style= "width:600px;height:600px;">
+                
+                    </div>
+
+
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+<br>
+        
+<br>        
+
+
+<br>        
+<br>
+
+<h1 style=" font-size:30;  text-align: center;">Top selling products</h1>
+<br>
+
+
+
+
+
+   
+ <div style="float:left;  
+                background:pink; 
+                width:300px; 
+                height:300px;
+                margin-left: 10px; "> 
+                <img src="home-decor-6.jpg"
+                style= "width:300px;height:300px;">
+                
+            </div>  
+
+
+
+
+
+                    <div style="float:left;  
+                background:red; 
+                width:320px; 
+                height:300px;margin-left: 10px;"> <img src="hector-shoe-rack.jpg"
+                style= "width:320px;height:300px;">
+                </div>
+
+
+                <div style="float:left; 
+                background:green; 
+                width:350px; 
+                height:300px;
+                margin-left: 10px;">
+ <img src="home-decor-3.jpg"
+                style= "width:350px;height:300px;">
+                
+                    </div>
+
+
+<div style="float:left; 
+                background:pink; 
+                width:310px; 
+                height:300px;
+                margin-left: 10px;">
+
+<img src="escobar-coffee-table.jpg"
+                style= "width:350px;height:300px;">
+       
+                    </div>
+
+
+<br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+            </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div id="services" class="parallax section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Our Service</h3>
+                <p class="lead">Our Service provides unlimited solutions to all needs. .</p>
+            </div><!-- end title -->
+
+            <div class="owl-services owl-carousel owl-theme">
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        
+                        <img src="harvey-tv-unit.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>jjjljjj</h3>
+						<p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
+					</div>
+                </div>
+                <!-- end service -->
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+
+                        <img src="home-decor-5.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>hkhjhh</h3>
+						<p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
+					</div>
+                </div>
+                <!-- end service -->
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                       
+                        <img src="how-it-work.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>jhh</h3>
+						<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis accumsan.</p>
+					</div>
+                </div>
+                <!-- end service -->
+
+                <div class="service-widget">
+                    <div class="post-media wow fadeIn">
+                        
+                        <img src="sofa-cum-beds.jpg" alt="" class="img-responsive img-rounded">
+                    </div>
+					<div class="service-dit">
+						<h3>hgyyguygiuuih</h3>
+						<p>Praesent in neque congue sapien lobortis faucibus id eget erat. <br>Pellentesque maximus rutrum felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+					</div>
+                </div>
+                <!-- end service -->
+            </div><!-- end row -->
+
+            <hr class="hr1">
+
+           
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+
+
+<h3 style="text-align: center;font-size: 20;">TRENDY FURNITURE CUSTOMISED FOR YOUR HOME
+<br>
+<br>
+
+
+
+
+
+   
+ <div style="float:left;  
+                background:pink; 
+                width:300px; 
+                height:300px;
+                margin-left: 10px; "> 
+                <img src="popular-bed.jpg"
+                style= "width:300px;height:300px;">
+                
+            </div>  
+
+
+
+
+
+                    <div style="float:left;  
+                background:red; 
+                width:320px; 
+                height:300px;margin-left: 10px;"> <img src="IMG-20200608-WA0039.jpg"
+                style= "width:320px;height:300px;">
+                </div>
+
+
+                <div style="float:left; 
+                background:green; 
+                width:350px; 
+                height:300px;
+                margin-left: 10px;">
+ <img src="popular-bookshelves.jpg"
+                style= "width:350px;height:300px;">
+                
+                    </div>
+
+
+<div style="float:left; 
+                background:pink; 
+                width:310px; 
+                height:300px;
+                margin-left: 10px;">
+
+<img src="popular-sofa-cum-bed.jpg"
+                style= "width:350px;height:300px;">
+       
+                    </div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<img src="top-wooden-sofa.jpg" style="width: 1200px;height: 440px;margin-left: 60px;">
+
+
+
+<br><br><br>
+<h1 style="text-align: center;">Buy Furniture Online in Indore for Homes!</h1>
+<h4>Getting the wooden furniture online, which perfectly blends with your home decor is now easy. MK provides you with ready-made and customized solid wood furniture online. At MK, we are committed to serve our customers the exclusive range in home furniture products like sofa sets, coffee tables, wardrobes, dining tables</h4>
+
+<br>
+<br>
+<div style=" background-color: #F0F0F0;  width: 100%;height:7400px;" >
+<form>
+    
+
+<fieldset class="row-fluid">
+                                <div style="margin-top: 100px;margin-left: 600px; width: 170px;">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder=" Name"></div>
+
+
+<fieldset class="row-fluid">
+                                <div style="margin-top: 100px;margin-left: 600px; width: 170px;">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Email"></div>
+
+
+
+
+<fieldset class="row-fluid">
+                                <div style="margin-top: 100px;margin-left: 600px; width: 170px;">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="contact">
+</div>
+
+
+
+<fieldset class="row-fluid">
+                                <div style="margin-top: 100px;margin-left: 600px; width: 170px;">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Feedback"> </div>
+
+
+
+
+</form>
+
+	
+</div>
+
+
+           
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>    
+
+</body>
+</html>
